@@ -22,3 +22,9 @@ $  ansible-playbook -l lab1 -i inventory/hosts.ini site.yml -e "state=present"
 $ ansible-playbook -l lab1 -i inventory/hosts.ini site.yml -e "myrepo=https://github.com/kapilsthakkar25/space-shooter"
  
 $ ansible-playbook -l lab1 -i inventory/hosts.ini site.yml -e "myrepo=https://github.com/kapilsthakkar25/webapp-repo"
+
+
+Adhoc command ansible
+$ ansible lab1 -i inventory/hosts.ini -m setup
+
+$ ansible lab1 -i inventory/hosts.ini -m ping
